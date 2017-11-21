@@ -3,6 +3,8 @@
 markdown: kramdown
 permalink: pretty
 
+repository: ramunasnognys/ramunasnognys.github.io
+
 port: 8000
 
 include: ['_includes/work']
