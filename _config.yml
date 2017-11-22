@@ -5,8 +5,11 @@ permalink: pretty
 
 port: 8000
 
-include: ['_includes/work']
-exclude: ['the_design.psd']
+include: ['_includes/work',]
+exclude: ['the_design.psd',
+          'package.json',
+          'src', 
+          'node_modules']
 
 sass:
   sass_dir: assets/css
