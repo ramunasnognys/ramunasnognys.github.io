@@ -1,0 +1,141 @@
+
+
+/*  --------------------------------------------
+
+   7. MEDIA QUERIES - responsive layouts
+
+    -------------------------------------------- */
+
+
+/* DESKTOPS MEDIUM */
+
+@media screen and (min-width: 1200px) {
+
+
+    /* CLASIC LAYOUT */
+    // .classic-layout .wrapper > section {
+    //    width: 100%;
+    //    }
+}
+
+
+/* DESKTOPS LARGE */
+
+@media screen and (min-width: 1400px) {
+    /* increase column gutter on large screens */
+}
+
+
+/* TABLETS */
+
+@media screen and (max-width: 991px) {
+    .container {
+
+        padding: 0;
+        grid-template-columns: 1fr;
+        #about-trumpai {
+            grid-column: 1 / 5;
+            grid-row: 1;
+            padding: $title-gutter;
+        }
+
+        #about-intro {
+            font-size: 22px;
+            grid-column: 1 / 5;
+            margin: 32px 0;
+            h2 {}
+            span {
+                display: inline;
+                font-family: "LatoBlack";
+            }
+            span.pushEffect {
+                min-height: 34px;
+            }
+            .pushEffect {
+                min-width: 280px;
+                text-align: left;
+            }
+        } //  POMEGIAI
+    }
+}
+
+
+
+
+/* SMARTPHONES */
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 1em 1em !important;
+
+        #about-intro {
+            position: relative;
+            grid-column: 1 / 5;
+            margin: 10px 0;
+            h2 {
+                font-size: 28px;
+                .break0 {
+                    display: inline;
+                }
+                .nobreak {
+                    display: none;
+                }
+            }
+            span {
+                margin-left: -45px;
+            }
+        } //Pomegiai
+        #about-pomegiai {
+            grid-column: 1 / 4;
+            padding: 0 10px;
+        }
+
+        .section-title {
+            margin-bottom: 0;
+  }
+
+        .pomegiai {
+            grid-column: 1 / 4;
+             margin: 0;
+            .inner-wrapper h4 {
+                font-size: 22px;
+            }
+            .inner-wrapper p {
+                font-size: 22px;
+                margin-bottom: 40px;
+            }
+        } //Faktai
+        #about-faktai {
+            grid-column: 1 / 4;
+            padding: 10px 0;
+        }
+        .faktai {
+            grid-column: 1 / 4;
+            .inner-wrapper {
+                display: block;
+                .f-item-1,
+                .f-item-2,
+                .f-item-3 {
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+
+
+
+
+    /* intro text */
+    /* timeline */
+    /* PROCESS */
+    /* testomonial */
+    /* skills */
+    /* tagline */
+    /* blockquotes */
+    /* tabs */
+    /* cta */
+    /* project-action */
+    /* letter */
+    /* contact form */
+    /* BLOG SINGLE */
+}
