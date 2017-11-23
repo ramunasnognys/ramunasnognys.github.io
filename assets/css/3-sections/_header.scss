@@ -1,14 +1,3 @@
-$main: #1a222c;
-$sec: #4B5664;
-$purple: #54516A;
-$cut: 768px;
-
-
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
 @-webkit-keyframes pulse {
     from {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -78,10 +67,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    color: $white;
-    font-size: 50px;
-    display: block;
-    line-height: 1;
+    @extend %header-line-display-color;
+    font-size: 50px;    
     font-weight: 400;
 
     @media only screen and (min-width:$cut){
@@ -90,11 +77,9 @@ body {
     }
   }
   .site-description {
-    color: $white;
-    font-size: 20px;
-    display: block;
-    line-height: 1;
-    margin: 5px 0 10px 0;
+    @extend %header-line-display-color;
+    margin-top: 20px;
+    font-size: 20px;    
     font-weight: 300;
     @media only screen and (min-width:$cut){
       font-size: 40px;
@@ -113,6 +98,7 @@ body {
   }
 }
 
+// Headerio social piktogramu stilius
 .icons-header {
   display: flex;
   justify-content: center;
@@ -189,68 +175,6 @@ body {
   }
 }
 
-.user-details {
-  text-align: center;
-  font-size: 16px;
-  margin: 10px auto;
-}
-
-.user-projects {
-  margin: 40px auto;
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  h5 {
-    margin: 0;
-  }
-  li {
-    color: $main;
-    font-size: 1.1rem;
-  }
-  p {
-    margin-right: 5px;
-  }
-}
-
-.images {
-  @media only screen and (min-width: $cut) {
-    float: right;
-  }
-}
-
-.project-link {
-  display: block;
-  width: 100px;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
-  background-color: transparent;
-  border: 1px solid $main;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
-  &:hover {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
-  }
-  &:active {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
-  }
-}
+// ISTRINTA is orginalo .user-details .user-projects .images .project-link
+// REF 
 

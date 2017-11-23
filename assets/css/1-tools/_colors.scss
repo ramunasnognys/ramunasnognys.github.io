@@ -1,9 +1,11 @@
-//core corlor pallete
-$background-primary: #ffffff; //white
-$text-color: #00171f; //grey
-$header-color: #003459; //dark blue
-$subheader-color: #007ea7; //medium blue
-$icon-grey-color: #EAEEEF;; //icon grey
+// Core corlor pallete
+$background-primary: #ffffff; 
+$text-color: #00171f; 
+$header-color: #003459; 
+$subheader-color: #007ea7; 
+$icon-grey-color: #EAEEEF;
+$base-border-color: #EDE8F2;
+$main--dark-blue: #1a222c;
 
 // Secondary color palette
 $blue: #2d63a8;
@@ -17,10 +19,15 @@ $orange: #FF593F;
 $yellow: #FFD452;
 $green: #45b359;
 $white: #ffffff;
+$secondary-background-color: $grey--light;
 
- $base-border-color: #EDE8F2;
- $secondary-background-color: $grey--light;
- $main--dark-blue: #1a222c;
 
- $apie--h2text: #345;
+// Headeris
+$main: #1a222c;
+$sec: #4B5664;
+$purple: #54516A;
+$cut: 768px;
+
+// Apie
+$apie--h2text: #345;
 
