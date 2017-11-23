@@ -16,20 +16,11 @@
         //    width: 100%;
         //    }
     }
-    
-    
-    /* DESKTOPS LARGE */
-    
-    @media screen and (min-width: 1400px) {
-        /* increase column gutter on large screens */
-    }
-    
-    
+        
     /* TABLETS */
     
     @media screen and (max-width: 991px) {
         .container {
-    
             padding: 0;
             grid-template-columns: 1fr;
             #about-trumpai {
@@ -39,10 +30,12 @@
             }
     
             #about-intro {
+                h2 {
+                    font-size: 30px;
+                   }
                 font-size: 22px;
                 grid-column: 1 / 5;
                 margin: 32px 0;
-                h2 {}
                 span {
                     display: inline;
                     font-family: "LatoBlack";
@@ -54,7 +47,7 @@
                     min-width: 280px;
                     text-align: left;
                 }
-            } //  POMEGIAI
+            } 
         }
     }
     
