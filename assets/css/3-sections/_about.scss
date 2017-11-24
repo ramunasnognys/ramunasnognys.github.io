@@ -1,5 +1,3 @@
-@import 'media-queries';
-
 /* ===================================================
 
 	about.scss : "apie" skyrelis
@@ -16,11 +14,11 @@
     2.1 PRISISTATYMO HEADERIS
     2.2 PRISISTATYMO TURINYS
   3. POMĖGIAI
-    3.1 PRISISTATYMO TURINYS
-	4. FAKTAI APIE MANE
-	5. MODULES
-	7. MEDIA QUERIES
-	8. THEME
+    3.1 POMEGIAI TURINYS
+  4. FAKTAI
+  5. MEDIA QUERIES (tablet + smartphone)
+  6. PUSH ANIMATE
+
 
   =================================================== */
 
@@ -184,9 +182,14 @@
   }
 }
  
- // Faktai
+ /*  --------------------------------------------
+
+	4. FAKTai - faktų styliaus elementai
+
+    -------------------------------------------- */
  
- #about-faktai {
+ 
+    #about-faktai {
      grid-column: 2 / 4;
      grid-row: auto;
      padding: $title-gutter;
@@ -194,10 +197,6 @@
      h2 {
         font-size: 1em;
         vertical-align: baseline;
-     }
-     .title {
-        display: inline-flex;
-        align-items: center;
      }
   }
  
@@ -235,7 +234,6 @@
          padding: 10px auto;
          margin-right: 10px;
  
- 
          }
          h4 {
              font-family: "LatoWebThin";
@@ -252,72 +250,114 @@
          }
        }
  }
- 
- 
- // // ==================================================================
- // //   FOOTER
- // // ==================================================================
- 
- .footer {
-   background: $main;
-   padding: 10px 0;
-   margin-top: 100px;
-   text-align: center;
-   color: $white-dark;
-   .love {
-     margin-top: 7px;
-     color: red;
-   }
-   p {
-     font-size: 12px;
-   }
-   p.name-uppercase {
-     text-transform: uppercase;
-     margin: 0;
-     padding: 0;
-   }
- }
- 
- .up {
-   color: #FFF;
-   position: absolute;
-   width: 100%;
-   margin: 0 auto;
-   padding-top: 65px;
-   display: block;
-   text-align: center;
-   font-size: 30px;
-   cursor: pointer;
-   .icon {
-       position: absolute;
-       -webkit-transform-style: preserve-3d;
-       transform-style: preserve-3d;
-       top: 50%;
-       left: 50%;
-       padding-top: 50px;
-       -webkit-transform: translate(-50%, -50%);
-       transform: translate(-50%, -50%);
-       width: 100px;
-       height: 100px;
-       fill: #fff;
-       -webkit-animation: pulse 1.3s infinite;
-       animation: pulse 1.3s infinite;
-       &:hover {
-         color: $sec;
-       }
-       &:active {
-         color: $sec;
-       }
-   }
-   .fa-chevron-up::before {
-     color: $header-color;
- 
-   }
- }
 
-//  =============================================================================
-//  PUSH ANIMATE 
-//  ========================================================================================
+/*  --------------------------------------------
+
+	5.   MEDIA QUERIES (tablet + smartphone)
+
+    -------------------------------------------- */
+
+ /* TABLETS */
+    
+ @media screen and (max-width: 991px) {
+  .container {
+      grid-template-columns: 1fr;
+      margin: 0 10px;
+      #about-trumpai {
+          grid-column: 1 / 5;
+          grid-row: 1;
+          padding: $title-gutter;
+      }
+
+      #about-intro {
+          h2 {
+              font-size: 30px;
+             }
+          font-size: 22px;
+          grid-column: 1 / 5;
+          margin: 32px 0;
+          span {
+              display: inline;
+              font-family: "LatoBlack";
+          }
+          span.pushEffect {
+              min-height: 34px;
+          }
+          .pushEffect {
+              min-width: 280px;
+              text-align: left;
+          }
+      } 
+  }
+}
+
+
+/* SMARTPHONES */
+
+@media screen and (max-width: 767px) {
+  .container {
+      padding: 1em 1em !important;
+
+      #about-intro {
+          position: relative;
+          grid-column: 1 / 5;
+          margin: 10px 0;
+          h2 {
+              font-size: 28px;
+              .break0 { display: inline; }
+              .nobreak { display: none;  }
+          }
+          span {
+              margin-left: -45px;
+          }
+      } //Pomegiai
+
+      #about-pomegiai {
+          grid-column: 1 / 4;
+          padding: 0 10px;
+      }
+
+      .section-title {
+          margin-bottom: 0;
+      }
+
+      .pomegiai {
+          grid-column: 1 / 4;
+           margin: 0;
+          .inner-wrapper h4 {
+              font-size: 22px;
+          }
+          .inner-wrapper p {
+              font-size: 22px;
+              margin-bottom: 40px;
+          }
+      } 
+      
+      //Faktai
+      #about-faktai {
+          grid-column: 1 / 4;
+          padding: 10px 0;
+      }
+      .faktai {
+          grid-column: 1 / 4;
+          .inner-wrapper {
+              display: block;
+              .f-item-1,
+              .f-item-2,
+              .f-item-3 {
+                  margin: 20px auto;
+              }
+          }
+      }
+  }
+}
+
+
+/*  --------------------------------------------
+
+	6.  PUSH ANIMATE
+
+    -------------------------------------------- */
 
 .slidingVertical span{
   animation: topToBottom 12.5s linear infinite 0s;

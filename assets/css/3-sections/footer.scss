@@ -1,0 +1,61 @@
+ 
+ // // ==================================================================
+ // //   FOOTER
+ // // ==================================================================
+ 
+ .footer {
+    background: $main;
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: $white-dark;
+    .love {
+      margin-top: 7px;
+      color: red;
+    }
+    p {
+      font-size: 12px;
+    }
+    p.name-uppercase {
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .up {
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 65px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    .icon {
+        position: absolute;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        top: 50%;
+        left: 50%;
+        padding-top: 50px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        fill: #fff;
+        -webkit-animation: pulse 1.3s infinite;
+        animation: pulse 1.3s infinite;
+        &:hover {
+          color: $sec;
+        }
+        &:active {
+          color: $sec;
+        }
+    }
+    .fa-chevron-up::before {
+      color: $header-color;
+  
+    }
+  }
