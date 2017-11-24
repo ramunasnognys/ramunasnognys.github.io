@@ -4,8 +4,10 @@ markdown: kramdown
 permalink: pretty
 
 port: 8000
+baseurl: ""
+url: "http://ramunasnognys.github.io" 
 
-include: ['_includes/work',]
+include: ['_includes/pages',]
 exclude: ['the_design.psd',
           'package.json',
           'src', 
