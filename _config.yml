@@ -4,7 +4,7 @@ markdown: kramdown
 permalink: pretty
 
 port: 8000
-baseurl: /ramunasnognys.github.io
+baseurl: ""
 url: "http://ramunasnognys.github.io" 
 
 include: ['_includes/pages',]
