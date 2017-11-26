@@ -1,4 +1,5 @@
 // Base styles
+
 .hide-text {
   color: $white;
 }
@@ -108,11 +109,7 @@
   max-width: 100%; //changed 600px
   grid-gap: 10px;
   margin: 0 auto; //   background: rgb(136, 86, 86);
-  grid-template-areas:
-    "header header header header"
-    "left left left left"
-    "right right right right"
-    "footer footer footer footer";
+  grid-template-areas: "header header header header" "left left left left" "right right right right" "footer footer footer footer";
 
   section {
     padding: 32px 48px 16px;
@@ -243,7 +240,6 @@
   }
   // end timline
   // Tagu stilius
-
   .tag-area {
     width: 100%;
     height: auto;
@@ -273,10 +269,40 @@
   }
   // Tagu stilius
   //section RIGHT
-
-    /* Skills */
+  // NEW
+  .skill-lockup {
+    display: inline-flex;
+    color:#999;
+    background-color: #eee;
+    .skill-unit {
+      max-width: 550px;
+      background-color: #e2e2e2;
+      margin: 20px;
+      .skill-label {
+        font-weight: bold;
+      }
+    }
+    ul {
+      line-height: 2;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        position: relative;
+        margin-right: 5px;
+        span {
+          font-size: 24px;
+          color: #0064b4;
+          font-weight: bold;
+          padding: 0 2px 0 5px;
+          display: inline-block;
+        }
+      }
+      }
+  }
+  //NEW
+  /* Skills */
   section.right {
-
     p.skill-list {
       display: inline-flex;
       color: rosybrown;
@@ -361,13 +387,7 @@ footer {
     max-width: 100%;
     grid-gap: 10px;
     margin: 0 auto;
-    grid-template-areas:
-      "header header header header"
-      ". left right ."
-      ". left right ."
-      ". left right ."
-      ". left right ."
-      "footer footer footer footer";
+    grid-template-areas: "header header header header" ". left right ." ". left right ." ". left right ." ". left right ." "footer footer footer footer";
   }
 }
 /* Responsive Smartphone
@@ -381,13 +401,7 @@ footer {
     max-width: 100%;
     grid-gap: 10px;
     margin: 0 auto;
-    grid-template-areas:
-      "header header header header"
-      "left left right ."
-      ". left right ."
-      ". left right ."
-      ". left right ."
-      "footer footer footer footer";
+    grid-template-areas: "header header header header" "left left right ." ". left right ." ". left right ." ". left right ." "footer footer footer footer";
 
     section {
       padding: 32px 5px 16px;
