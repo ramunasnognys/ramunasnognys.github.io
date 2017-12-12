@@ -30,8 +30,8 @@
 .grid {
   display: grid;
  }
- 
-.container {  
+
+.container {
   padding: 4em 1em;
   font-size: 1em;
   line-height: 1.6;
@@ -55,7 +55,7 @@
     width: 58px;
   }
 }
- 
+
  /*  --------------------------------------------
 
 	2. TRUMPAI APIE SAVE - prisitstatymo styliaus elementai
@@ -70,32 +70,34 @@
 
   /* -----  1.1 PRISISTATYMO HEADERIS (su linija) ----- */
   .section-title {
-    position: relative; 
-    margin-bottom: 1em; 
-    font-size: 1em; 
+    font-family: LatoLight;
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 1em;
     font-weight: 400;
   }
   .section-title:before {
-    content: ""; 
-    position:absolute; 
-    top: 50%; 
-    left: 0; 
-    width: 100%; 
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
     border-bottom: 4px solid #EAEEEF;
   }
   .section-title span {
-    position:relative; 
-    display: inline-block; 
-    padding-right: 1.4em; 
+    position:relative;
+    display: inline-block;
+    padding-right: 1.4em;
     background: #fff;
   }
- 
+
 
 /* ----   1.2 PRISISTATYMO TURINYS (about-intro)    ---- */
 #about-intro {
   grid-column: 2 / 3;
     h2 {
       color: $grey--dark;
+      font-family: LatoLight;
       .break0 {
         display: none;
       }
@@ -109,50 +111,51 @@
         font-family: "LatoBlack";
       }
   }
- 
+
   .intro {
-    text-align: center; 
+    text-align: center;
     padding: 0 0 1em 0;
    }
     .intro h2 {
-      font-size: 2.0em; 
-      font-weight: 300; 
+      font-size: 2.0em;
+      font-weight: 300;
       line-height: 1.4;
     }
- 
+
  /* PUSH WORDS animation */
     .pushEffect {
-      display: inline-block; 
-      min-width: 180px; 
-      min-height: 74px; 
-      text-align: left; 
+      display: inline-block;
+      min-width: 180px;
+      min-height: 74px;
+      text-align: left;
       text-indent: 4px;
     }
     .pushEffect span {
-      font-family: "LatoBlack"; 
-      position: absolute; 
-      opacity: 0; 
-      font-weight: bold; 
+      font-family: "LatoBlack";
+      position: absolute;
+      opacity: 0;
+      font-weight: bold;
       letter-spacing: -2px;
    }//PUSH pabaiga
- 
+
 
    /*  --------------------------------------------
 
 	3. POMEGIAI - pomegių styliaus elementai
 
     -------------------------------------------- */
- 
+
 #about-pomegiai {
   grid-column: 2 / 4;
   grid-row: auto;
   padding: $title-gutter;
+  font-family: LatoLight;
  }
 
 .pkt {
   padding: 20px;
 }
- 
+
 /* ----    3.1 POMEGIU TURINYS    ----*/
 
 .pomegiai {
@@ -160,6 +163,7 @@
   grid-row: auto;
   display: inline-flex;
   text-align: center;
+  font-family: LatoLight;
   .inner-wrapper {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -181,14 +185,14 @@
     padding: 0 15px;
   }
 }
- 
+
  /*  --------------------------------------------
 
 	4. FAKTai - faktų styliaus elementai
 
     -------------------------------------------- */
- 
- 
+
+
     #about-faktai {
      grid-column: 2 / 4;
      grid-row: auto;
@@ -199,13 +203,13 @@
         vertical-align: baseline;
      }
   }
- 
+
   .fa {
      font-size: 32px;
      padding: 10px;
      color: $icon-grey-color;
   }
- 
+
   .title:after {
       content: "";
       position: relative;
@@ -214,7 +218,7 @@
       width: 800px;
       border-bottom: 4px solid $icon-grey-color;;
   }
- 
+
  .faktai {
    display: grid;
     grid-column: 2 / 3;
@@ -228,12 +232,12 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-template-rows: auto;
         grid-gap: 20px;
- 
+
        .f-item-1, .f-item-2, .f-item-3 {
          display: inline-flex;
          padding: 10px auto;
          margin-right: 10px;
- 
+
          }
          h4 {
              font-family: "LatoWebThin";
@@ -243,7 +247,7 @@
              text-align: left;
              text-transform: uppercase;
          }
- 
+
          img {
              width: 64px;
              height: 64px;
@@ -258,7 +262,7 @@
     -------------------------------------------- */
 
  /* TABLETS */
-    
+
  @media screen and (max-width: 991px) {
   .container {
       grid-template-columns: 1fr;
@@ -287,7 +291,7 @@
               min-width: 280px;
               text-align: left;
           }
-      } 
+      }
   }
 }
 
@@ -331,8 +335,8 @@
               font-size: 22px;
               margin-bottom: 40px;
           }
-      } 
-      
+      }
+
       //Faktai
       #about-faktai {
           grid-column: 1 / 4;

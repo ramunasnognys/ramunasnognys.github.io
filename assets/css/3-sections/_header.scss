@@ -43,7 +43,7 @@
 }
 
 #particles-js {
-  background: $main;
+  background: $header-color;
   display: block;
   vertical-align: bottom;
   width: 100vw;
@@ -68,7 +68,7 @@
   transform: translate(-50%, -50%);
   .site-title {
     @extend %header-line-display-color;
-    font-size: 50px;    
+    font-size: 50px;
     font-weight: 400;
 
     @media only screen and (min-width:$cut){
@@ -79,7 +79,7 @@
   .site-description {
     @extend %header-line-display-color;
     margin-top: 20px;
-    font-size: 20px;    
+    font-size: 20px;
     font-weight: 300;
     @media only screen and (min-width:$cut){
       font-size: 40px;
@@ -103,6 +103,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 15px;
   .icon {
     text-align: center;
     color: #FFF;
@@ -176,5 +177,4 @@
 }
 
 // ISTRINTA is orginalo .user-details .user-projects .images .project-link
-// REF 
-
+// REF

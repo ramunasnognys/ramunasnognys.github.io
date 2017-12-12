@@ -271,19 +271,18 @@
   //section RIGHT
   // NEW
   .skill-lockup {
-    display: inline-flex;
+    display: block;
     color:#999;
-    background-color: #eee;
     .skill-unit {
       max-width: 550px;
-      background-color: #e2e2e2;
       margin: 20px;
       .skill-label {
         font-weight: bold;
+        color: $main--dark-blue;
       }
     }
     ul {
-      line-height: 2;
+      line-height: 1.3;
       margin: 0;
       padding: 0;
       li {
@@ -304,6 +303,7 @@
   /* Skills */
   section.right {
     p.skill-list {
+      margin: 0;
       display: inline-flex;
       color: rosybrown;
       font-size: 14px;
@@ -314,10 +314,6 @@
         padding: 0 2px 0 5px;
         font-weight: bold;
       }
-    }
-
-    h3 {
-      padding-top: 15px;
     }
 
     ul.skill-list {
