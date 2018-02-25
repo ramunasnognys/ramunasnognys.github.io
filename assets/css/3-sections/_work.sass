@@ -1,0 +1,64 @@
+
+#work
+    text-align: center
+    padding: 50px 0
+
+.alt-section
+    background: $grey--light
+
+.thumb-container
+    max-width: 960px
+    margin: 0px auto
+    padding-bottom: 100px
+
+    +clearfix
+
+.thumb-unit
+    display: block
+    width: 25%
+    float: left
+    position: relative
+    padding-top: 16%
+    cursor: pointer
+    background:
+        position: center center
+        repeat: no-repeat
+        size: cover
+    +perspective(300)
+
+    @media screen and (max-width: 760px)
+        width: 50%
+        padding-top: 26%
+
+
+    .thumb-overly
+        +position(absolute, 0% 0px null 0px)
+        height: 100%
+        background: fade-out($subheader-color, 0.1)
+        text-align: center
+        +display(flex)
+        +align-items(center)
+        +justify-content(space-around)
+        +transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
+        opacity: 0
+        +transition(opacity, 300ms, ease-in, 300ms)
+
+        strong
+            display: block
+            padding: 0 9%
+            color: white
+            font:
+                weight: 300
+                size: 24px
+            text-transform: uppercase
+            line-height: 1.2
+
+
+
+
+    &:hover
+        z-index: 2
+        .thumb-overly
+            @extend %animation
+            opacity: 1
+        // +position(absolute, 0% 0px null 0px)
