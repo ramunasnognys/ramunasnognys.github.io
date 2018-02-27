@@ -11,12 +11,13 @@
     
 .work-belt 
     width: 200%
-    background: pink
+    position: relative
+    left: -100%
 
 .thumb-wrap, .work-wrap
     width: 50%
     float: left
-
+ 
 .thumb-container
     max-width: 960px
     margin: 0px auto
@@ -70,6 +71,46 @@
     &:hover
         z-index: 2
         .thumb-overly
+            
             @extend %animation
             opacity: 1
-        // +position(absolute, 0% 0px null 0px)
+
+
+
+.work-container
+    max-width: 600px
+    margin: 0px auto
+    position: relative
+
+    h4 
+        color: $accent
+        text-transform: uppercase
+        line-height: 1.2
+        margin-bottom: 20px
+        font:
+            weight: 300
+            size: 24px
+    img 
+        max-width: 100%
+        margin-bottom: 20px
+
+    .work-return
+        +size(40px) 
+        cursor: pointer
+        opacity: 0.5
+        +position(absolute, -4px null null -60px)
+
+        path 
+            fill: rgba(0,0,0,0.4)
+
+        &:hover
+            opacity: 1
+
+@media (max-width: 740px)
+    .work-container
+
+        .work-return
+            left: 0px
+
+        h4
+            margin-left: 60px
