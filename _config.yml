@@ -3,11 +3,11 @@
 markdown: kramdown
 permalink: pretty
 
-port: 8000
+port: 7000
 baseurl: ""
 url: "http://ramunasnognys.github.io" 
 
-include: ['_includes/pages',]
+include: ['_includes/pages', '_includes/work']
 exclude: ['the_design.psd',
           'package.json',
           'src', 
