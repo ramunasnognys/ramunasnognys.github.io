@@ -194,7 +194,6 @@ $blackColor: #dee3e7;
     top: 40px;
     left: 40px;
     z-index: 6;
-    font-size: 20px;
     font-weight: 900;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -281,6 +280,8 @@ $blackColor: #dee3e7;
             font-family: sans-serif;
             display: block;
             padding: 30px;
+            font-size: 3em;
+
           }
         }
       }
@@ -297,3 +298,20 @@ $blackColor: #dee3e7;
     } 
 }
 
+.pullUp a:before
+      {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0px;
+          bottom: 0px;
+          content: '';
+          background: #FFF;
+          opacity: 0.3;
+          transition: all 0.3s;
+      }
+
+      .pullUp a:hover:before
+      {
+          height: 100%;
+      }
