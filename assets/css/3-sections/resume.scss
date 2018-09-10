@@ -56,7 +56,7 @@
     h1,
     h2,
     h3 {
-      margin: 0;
+      margin: 11px;
       color: $white;
     }
 
@@ -118,7 +118,8 @@
       h3 {}
 
       .title {
-        font-size: 30px;
+        font-size: 25px;
+        margin-bottom: -11px;
       }
 
       h3.proffesion {
@@ -129,6 +130,12 @@
 
       h3.resume {
         font-size: 15px;
+      }
+
+      .container-cp {
+        display: inline-flex;
+        padding: 5px;
+        min-width: 177px;
       }
     }
   }
