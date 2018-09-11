@@ -40,12 +40,12 @@
           left: 0px;
           bottom: 0px;
           content: '';
-          background: #FFF;
+          background: rgb(126, 221, 162);
           opacity: 0.3;
           transition: all 0.3s;
       }
 
-      .pullUp a:hover:before
+    .pullUp a:hover:before
       {
           height: 100%;
       }
