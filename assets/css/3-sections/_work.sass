@@ -3,7 +3,6 @@ body
     margin: auto
     width: 100%
     font-family: sans-serif
-    border: 3px solid green
     padding: 10px
     height: 100%
     // background: yellow
@@ -23,25 +22,63 @@ body
       margin: auto
       margin-top: 50px
       margin-bottom: 50px
-      width: 50%
+      width: 70%
       padding: 10px
 
       img
         
       p
         color: $sec
-        line-height: 2.5
-        margin-top: -10
+        margin-top: 10px
+      span
+        font-size: 12px
+        color: #4dba87
+        margin: 30px auto
+      
       button
-        width: 150px
-        height: 50px
-        margin: 40px
-        background-color: #4dba87
+        display: inline-block
+        border: none
         color: #fff
+        text-decoration: none
+        background-color: $accent
+        padding: 15px 45px
+        font-size: 13px
+        text-transform: uppercase
+        font-weight: 600
+        letter-spacing: 3px
+        border-radius: 2px
+        text-align: center
+        position: relative
+        outline: none
+        transition: background-color .1s ease
+        cursor: pointer
+        &::after
+          transition: background-color .2s ease
+          position: absolute
+          content: ''
+          height: 4px
+          bottom: 0
+          width: 100%
+          background-color: darken($accent, 50%)
+          opacity: .18
+          border-bottom-left-radius: 2px
+          border-bottom-right-radius: 2px
+          left: 0
+        &:focus, &:hover
+          text-decoration: none
+          color: #fff
+        &:hover
+          background-color: lighten($accent, 5%)
+          &::after
+            opacity: .22
+        &:active
+          background-color: darken($accent, 5%)
+          &::after
+            opacity: .32
 
 
 
 
 
 
-  
+        
