@@ -2,12 +2,465 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <title>Responsive resume cv</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Nognys</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>References
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/img/me.jpg" alt="" class="home__img" />
+
+                <h1 class="home__title">RAMŪNAS <b>NOGNYS</b></h1>
+                <h3 class="home__profession">
+                  Advanced Offshore <br />Scaffolder
+                </h3>
+
+                <div>
+                  <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
+                  <a
+                    download=""
+                    href="assets/pdf/ResumeCv.pdf"
+                    class="home__button-movil"
+                    >Dowload Cv</a
+                  >
+                </div>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i> Vilnius, Lithuania
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  ramunas.nognys@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i> +37066514783
+                </span>
+              </div>
+            </div>
+
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/ramunas-nognys-7b102148/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i>
+                @smithmat
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-facebook social__icon"></i>
+                @smithmat
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i>
+                @smithmat
+              </a>
+            </div>
+          </section>
+
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+            <p class="profile__description">
+              I’m advanced scaffolder with 8 years offshore scaffolding
+              experience and demonstrated history of working in offshore oil &
+              gas, renewable energy fields. Strong in organizational and task
+              planning skills.
+            </p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    BACHELOR OF APPLIED INFORMATICS
+                  </h3>
+                  <span class="education__studies"
+                    >West Lithuania Bussiness College</span
+                  >
+                  <span class="education__year">2013 - 20175</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">MASTER IN UI/UX</h3>
+                  <span class="education__studies">Institute Studies</span>
+                  <span class="education__year">2019 - 2021</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Oil & Gas
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Renewable Energy
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Supervision
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Scaffolding
+                </li>
+              </ul>
+
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Hang Scaffolds
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Communication
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> React
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">
+                    ADVANCED OFFOSHORE SCAFFOLDER
+                  </h3>
+                  <span class="experience__company"
+                    >From 2014 to Present | Inmatch for Van Der Panne</span
+                  >
+                  <p class="experience__description">
+                    Working as a team lead, foreman to erect and dismantle
+                    scaffolds in the correct sequence and builds to suit the
+                    needs of client. Performing scaffolding tasks in various
+                    offshore platform installations, substations mainly in North
+                    Sea.
+                  </p>
+                  <!-- new -->
+                  <p class="experience__circle circle">
+                    Most recent Oil & Gas projects: L5A, G17A for Neptune.
+                    Erecting over the side scaffolds for new railing pots.
+                  </p>
+                  <p class="experience__circle">
+                    Most recent GWO projects: HKZ Beta for Helenic Cables,
+                    Mermaid CSS for Equans. Erecting, dismanteling scaffolds for
+                    cable pulling.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">LEAD SCAFFOLDER</h3>
+                  <span class="experience__company"
+                    >From 2012 to 2014 | TRAD Scaffolding</span
+                  >
+                  <p class="experience__description">
+                    I was working as a lead scaffolder for TRAD scaffolding,
+                    Layher system scaffolds division in London area. Worked in
+                    multiple street scaffolding jobs, construction sites. Worked
+                    in Fulham stadium project, build a 200m long birdcage
+                    scaffold to renovate old roof.
+                  </p>
+                  <!-- new -->
+                  <p class="experience__circle">
+                    Erecting and dismantling scaffolds in the correct sequence
+                    and builds.
+                  </p>
+                  <p class="experience__circle">
+                    Ordering scaffold material. Loading, unloading material.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">LEAD SCAFFOLDER / FOREMAN</h3>
+                  <span class="experience__company"
+                    >From 2009 to 2012 | Utges for Altrad</span
+                  >
+                  <p class="experience__description">
+                    Had a pleasure to be part of building Neste Oil refinery
+                    from the ground up with Altrad. I was working as a
+                    scaffolding team lead, later build up myself to foreman
+                    role. Project was successfuly finished in 2 years time.
+                    250000 m3 scaffolds have been erected and dismanteled on
+                    this project.
+                  </p>
+                  <!-- new -->
+                  <p class="experience__circle">
+                    Erecting and dismantling scaffolds in the correct sequence
+                    and builds.
+                  </p>
+                  <p class="experience__circle">
+                    Working closly with Altrad supervisor and contractors (IREM)
+                    scaffold coordinator to ensure scaffolds are build in a
+                    safest manner and suit the client needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">OPITO BOSIET + CA-EB</h3>
+                <p class="certificate__description">
+                  Basic Offshore Safety Induction and Emergency Training and
+                  Compressed Air Emergency Breathing System.
+                </p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">OGUK MEDICAL</h3>
+                <p class="certificate__description">Oil & Gas UK medical.</p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">GWO (full)</h3>
+                <p class="certificate__description">The GWO Basic Safety Training courses</p>
+              </div>
+
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">STEIGERBOWER B</h3>
+                <p class="certificate__description">
+                  DNV Advanced Scaffolding certificate.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">Banksman & Slinger</h3>
+                <p class="certificate__description">
+                  OPITO Banksman & Slinger Initial Training, Stage 1
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--========== REFERENCES ==========-->
+          <!-- <section class="references section" id="references">
+            <h2 class="section-title">References</h2>
+
+            <div class="references__container bd-grid">
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Sr. Director</span>
+                <h3 class="references__title">Mr. Clay Doe</h3>
+                <ul class="references__contact">
+                  <li>Phone: 999-888-777</li>
+                  <li>Email: user@email.com</li>
+                </ul>
+              </div>
+
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Mag. Developer</span>
+                <h3 class="references__title">Mr. Robbinson Bass</h3>
+                <ul class="references__contact">
+                  <li>Phone: 999-888-777</li>
+                  <li>Email: user@email.com</li>
+                </ul>
+              </div>
+            </div>
+          </section> -->
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Lithuanian
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> English
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Russian
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Polish
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Music</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-plane-alt interests__icon"></i>
+                <span class="interests__name">Travel</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-book interests__icon"></i>
+                <span class="interests__name">Read</span>
+              </div>
+              <div class="interests__content">
+                <i class='bx bx-dumbbell interests__icon' ></i>
+                <span class="interests__name">Fitness</span>
+            </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>
