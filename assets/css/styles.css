@@ -362,6 +362,10 @@ img{
   font-size: var(--small-font-size);
 }
 
+.home__contact, .home__email {
+  color: initial;
+}
+
 .home__icon{
   font-size: 1.2rem;
   margin-right: .25rem;
@@ -461,6 +465,15 @@ img{
   font-size: var(--smaller-font-size);
 }
 
+.experience__circle {
+  margin-left: .75rem;
+}
+.list {
+  list-style:initial;
+  margin-left: .7rem;
+  /* color: var(--text-color); */
+
+}
 /*========== SKILLS AND LANGUAGES ==========*/
 .skills__content,
 .languages__content{
@@ -514,7 +527,7 @@ img{
 
 /*========== INTERESTS ==========*/
 .interests__container{
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: var(--mb-2);
 }
 
