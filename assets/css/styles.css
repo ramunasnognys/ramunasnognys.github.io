@@ -459,6 +459,7 @@ img{
 .experience__company{
   font-size: var(--small-font-size);
   color: var(--title-color);
+  font-style: italic;
 }
 
 .education__year{
