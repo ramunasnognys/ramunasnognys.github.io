@@ -645,8 +645,8 @@ img{
 
 /* Custom CSS */
 
-/* .day   {  color: black; }
-.night {  color: white; } */
+.day   {  color: black; }
+.night {  color: white; }
 
 @media (prefers-color-scheme: dark) {
   .day.dark-scheme   {  color: white; }
@@ -654,6 +654,6 @@ img{
 }
 
 @media (prefers-color-scheme: light) {
-  .day.light-scheme   { color:  var(--text-color-light) }
+  .day.light-scheme   { color:  red }
   .night.light-scheme { color: black; }
 }
