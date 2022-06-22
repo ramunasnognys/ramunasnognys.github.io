@@ -643,3 +643,17 @@ img{
   }
 }
 
+/* Custom CSS */
+
+/* .day   {  color: black; }
+.night {  color: white; } */
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme   {  color: white; }
+  .night.dark-scheme {  color:  var(--text-color) }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { color:  var(--text-color-light) }
+  .night.light-scheme { color: black; }
+}
